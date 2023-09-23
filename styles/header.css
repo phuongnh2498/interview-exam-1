@@ -40,6 +40,7 @@ header nav {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .navigation-menu a {
   text-transform: uppercase;
   font-weight: 700;
@@ -48,6 +49,10 @@ header nav {
   line-height: 1.4;
   letter-spacing: -0.7px;
   text-wrap: nowrap;
+  transition: transform 0.2s;
+}
+.navigation-menu li:hover {
+  transform: scale(1.1);
 }
 .navigation-menu li:nth-child(1) a,
 .navigation-menu li:nth-child(2) a {
