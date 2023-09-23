@@ -99,4 +99,13 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.remove("sticky-nav");
     }
   });
+
+  //add toggle hamburger
+
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".navigation-menu");
+
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("menu-open");
+  });
 });
