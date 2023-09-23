@@ -584,6 +584,7 @@ header nav {
 
 .cell05 {
   position: relative;
+  z-index: 2;
 }
 .cell05 .heading-number {
   opacity: 0.529;
@@ -671,6 +672,7 @@ header nav {
 .cell07 {
   display: flex;
   justify-content: end;
+  z-index: 2;
 }
 .cell07 .collection-title-big {
   font-size: 5.5rem;
@@ -689,28 +691,43 @@ header nav {
 }
 .cell08 {
   position: relative;
+  z-index: 1;
 }
 .cell08 .image-container {
   position: absolute;
   top: -131px;
   width: 679px;
-  z-index: -1;
   left: -269px;
 }
 .cell08 .image-container::after {
   content: "";
   position: absolute;
   width: 215px;
+  z-index: -1;
   height: 555px;
+  mix-blend-mode: multiply;
   top: 62px;
-  right: 13px;
+  right: 9px;
   background-image: url(../utils/images/decoration-end.svg);
-  background-size: 225px;
-  /* background-position: 0 -22px; */
+  background-size: 213px;
   background-repeat: no-repeat;
-  opacity: 0.188;
-  /* z-index: -1; */
-  background-color: #b8a47e;
+  opacity: 0.8;
+  background-color: #e3dccc;
+}
+.cell08 .image-container::before {
+  content: "";
+  position: absolute;
+  width: 215px;
+  height: 371px;
+  top: 62px;
+  right: 9px;
+  background-image: url(../utils/images/decoration-end.svg);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-color: #e3dccc;
+  z-index: 2;
+  mix-blend-mode: multiply;
 }
 .cassette {
   margin-top: 123px;
