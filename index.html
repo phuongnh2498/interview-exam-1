@@ -20,14 +20,20 @@
       <nav id="header-nav">
         <ul class="navigation-menu">
           <li class="nav-item nav-active" data-nav-id="nav1">
-            <a href="#">navy salt</a>
+            <a href="#section1">navy salt</a>
           </li>
-          <li class="nav-item" data-nav-id="nav2"><a href="#">voyager</a></li>
-          <li class="nav-item" data-nav-id="nav3"><a href="#">drifter</a></li>
+          <li class="nav-item" data-nav-id="nav2">
+            <a href="#section2">voyager</a>
+          </li>
+          <li class="nav-item" data-nav-id="nav3">
+            <a href="#section3">drifter</a>
+          </li>
           <li class="nav-item" data-nav-id="nav4">
-            <a href="#">collection</a>
+            <a href="#section3">collection</a>
           </li>
-          <li class="nav-item" data-nav-id="nav5"><a href="#">contact</a></li>
+          <li class="nav-item" data-nav-id="nav5">
+            <a href="#section5">contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -51,7 +57,7 @@
         <button class="page-number" data-section="section5">05</button>
       </div>
     </div>
-    <section class="section-one">
+    <section id="section1" class="section-one">
       <div class="hero-wrapper">
         <h3>Designed for utility</h3>
         <h1>NAVY SALT & PEPPER</h1>
@@ -59,7 +65,11 @@
       </div>
     </section>
     <div class="divider"></div>
-    <section class="section-two banner-section">
+    <section
+      id="section2"
+      class="section-two banner-section"
+      data-src="./utils/images/hero_image2.svg"
+    >
       <div class="hero-wrapper">
         <div class="title">
           <h1>VOYAGER DAYPACK</h1>
@@ -80,7 +90,11 @@
       </div>
     </section>
     <div class="divider"></div>
-    <section class="section-three banner-section">
+    <section
+      id="section3"
+      class="section-three banner-section"
+      data-src="./utils/images/hero_image3.svg"
+    >
       <div class="hero-wrapper">
         <p class="description">
           <span>Field-tested from the peaks of the Cascades down </span>
@@ -100,7 +114,7 @@
         </div>
       </div>
     </section>
-    <section class="section-four">
+    <section id="section4" class="section-four">
       <div class="title">
         <h1>Tanner Collections</h1>
         <div class="label-text">
@@ -189,7 +203,7 @@
         </div>
       </div>
     </section>
-    <section class="cassette">
+    <section id="section5" class="cassette">
       <div class="cassette-item image-container">
         <img src="./utils/images/cassette-25.svg" alt="cassette" />
       </div>

@@ -14,6 +14,7 @@
 html {
   font-size: 62.5%;
   /* 1rem = 10px */
+  scroll-behavior: smooth;
 }
 body {
   height: 100vh;
@@ -51,7 +52,7 @@ header nav {
 }
 
 .header-logo {
-  width: 219.625px;
+  width: clamp(100px, 14.6%, 220px);
   text-align: center;
   translate: 0 -30.7%;
   margin-left: 10px;
@@ -67,6 +68,7 @@ header nav {
   display: flex;
   gap: 95px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .navigation-menu a {
   text-transform: uppercase;
@@ -293,7 +295,7 @@ header nav {
 
 .section-three {
   height: 936.5px;
-  background-image: url(../utils/images/hero_image3.svg);
+  background-image: url("../utils/images/hero_image3.svg");
   background-size: 67.2% auto;
   padding-right: 158px;
   background-position: center right 2px;
@@ -668,6 +670,7 @@ header nav {
   position: absolute;
   right: 90px;
   bottom: 104px;
+  z-index: 3;
 }
 .cell07 {
   display: flex;
