@@ -1,26 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="header-logo">
-            <img src="./utils/images/tanner_logo.svg">
-        </div>
-        <nav>
-            <ul class="navigation-menu">
-                <li class="nav-item nav-active"><a href="#">navy salt</a></li>
-                <li class="nav-item"><a href="#">voyager</a></li>
-                <li class="nav-item"><a href="#">drifter</a></li>
-                <li class="nav-item"><a href="#">collection</a></li>
-                <li class="nav-item"><a href="#">contact</a></li>
-            </ul>
-        </nav>
+      <div class="header-logo">
+        <img src="./utils/images/tanner_logo.svg" />
+      </div>
+      <nav id="header-nav">
+        <ul class="navigation-menu">
+          <li class="nav-item nav-active" data-nav-id="nav1">
+            <a href="#">navy salt</a>
+          </li>
+          <li class="nav-item" data-nav-id="nav2"><a href="#">voyager</a></li>
+          <li class="nav-item" data-nav-id="nav3"><a href="#">drifter</a></li>
+          <li class="nav-item" data-nav-id="nav4">
+            <a href="#">collection</a>
+          </li>
+          <li class="nav-item" data-nav-id="nav5"><a href="#">contact</a></li>
+        </ul>
+      </nav>
     </header>
-    By structuring your navigation this way, you maintain the benefits of semantic HTML and have a clear structure for styling and layout. However, it's not mandatory, and you can use <a> tags directly if you prefer, as long as your HTML remains well-structured and semantically meaningful.
-</body>
+    <section class="section-one">
+      <div class="hero-wrapper">
+        <h3>Designed for utility</h3>
+        <h1>NAVY SALT & PEPPER</h1>
+        <a class="btn-gear">Gear UP</a>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <section class="section-two banner-section">
+      <div class="hero-wrapper">
+        <div class="title">
+          <h1>VOYAGER DAYPACK</h1>
+          <h3>NAVY SALT & PEPPER</h3>
+        </div>
+        <p class="description">
+          <span>Whether you’re stomping around outdoors</span>
+          <span>or traversing the city, our Voyager Daypack</span>
+          <span>was designed to be adaptable</span>
+          <span>in all environments. Compact,lightweight</span>
+          <span>and a comfortable for people of all sizes.</span>
+          <span>this silhouette is versatile enough</span>
+          <span>to fit just about anyone’s daily routine.</span>
+        </p>
+        <div class="arrow-down">
+          <img src="./utils/images/arrow_down.svg" alt="arrow down" />
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <section class="section-three banner-section">
+      <div class="hero-wrapper">
+        <p class="description">
+          <span>Field-tested from the peaks of the Cascades down </span>
+          <span>to the desert floor of Joshua Tree, the Wilderness</span>
+          <span>Rucksack was built to put on some serious miles</span>
+          <span>for years to come. A comfortable, dependable </span>
+          <span>combination of 14oz Salt & Pepper canvas, premium</span>
+          <span>wool felt, and Cambara English bridle leather.</span>
+        </p>
+        <div class="title">
+          <h1>DRIFTER DOPP KIT</h1>
+          <h3>NAVY SALT & PEPPER</h3>
+        </div>
+        <p class="decoration-text">NAVY SALT</p>
+        <div class="arrow-down">
+          <img src="./utils/images/arrow_down.svg" alt="arrow down" />
+        </div>
+      </div>
+    </section>
+    <section class="section-four">
+      <div class="title">
+        <h1>Tanner Collections</h1>
+        <div class="label-text">
+          <p>NAVY SALT & PEPPER</p>
+        </div>
+      </div>
+      <div class="collection-wrapper">
+        <div class="cell01">
+          <h1 class="heading-number">01</h1>
+          <div class="image-container">
+            <div class="collection-image">
+              <img src="./utils/images/collection1.svg" alt="collection" />
+            </div>
+          </div>
+        </div>
+        <div class="cell02">
+          <div class="line-decorator"></div>
+          <div class="line-decorator-02"></div>
+          <div class="content-wrapper">
+            <h1>NOMAD DUFFLE</h1>
+            <p>
+              This bag can be carried by hand, worn as a backpack or slung over
+              a shoulder depending on your traveling needs
+            </p>
+            <div class="read-more">
+              <a href="">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="cell03">
+          <div class="content-wrapper">
+            <h1 class="collection-title">SPRUCE SALT & PEPPER</h1>
+            <p>
+              We designed our Nomad Duffle as a versatile yet rugged piece of
+              luggage that's just as comfortable outdoors as it is in an
+              overhead compartment
+            </p>
+            <div class="read-more">
+              <a href="">READ MORE</a>
+            </div>
+            <h1 class="heading-number">02</h1>
+          </div>
+        </div>
+        <div class="cell04">
+          <div class="image-container">
+            <div class="collection-image">
+              <img src="./utils/images/collection2.svg" alt="collection" />
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+    </section>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
