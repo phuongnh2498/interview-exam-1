@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver(handleIntersection, {
     root: null, // viewport
     rootMargin: "0px",
-    threshold: 0.5, // 50% of the section needs to be visible
+    threshold: 0.1, // 50% of the section needs to be visible
   });
 
   sections.forEach((section) => {
@@ -103,9 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
   //add toggle hamburger
 
   const menuToggle = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector(".navigation-menu");
+  const navMenu = document.querySelector("#header-nav");
 
   menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("menu-open");
+    navMenu.classList.toggle("menu-open");
   });
 });
