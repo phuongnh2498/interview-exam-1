@@ -115,7 +115,7 @@ header nav {
     padding-right: 30px;
     padding-top: 30px;
     height: 100px;
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: rgb(255, 255, 255, 0.2);
   }
   .navigation-menu {
     display: none;
@@ -124,6 +124,7 @@ header nav {
   .menu-toggle {
     display: block;
     cursor: pointer;
+    height: 30px;
   }
   .sticky-nav {
     justify-content: end;
