@@ -35,22 +35,21 @@ footer {
 .footer-container .product-category {
   display: flex;
   font-size: 15px;
-  gap: 70px;
+  gap: 11.9%;
   letter-spacing: 0px;
   color: #919191;
   font-weight: 700;
-  padding-left: 42px;
+  padding-left: 6.1%;
 }
 
 .footer-container .social-media {
   display: flex;
   font-size: 15px;
-  gap: 83px;
+  gap: 14.7%;
   letter-spacing: 0px;
   color: #000000;
-  padding-left: 86px;
+  padding-left: 13.5%;
   font-weight: 300;
-  font-family: "Montserrat";
 }
 .footer-container .address-container {
   font-size: 1.5rem;
@@ -100,4 +99,26 @@ footer {
 .footer-container .btn-arrow-icon {
   width: 7px;
   margin-left: 21px;
+}
+
+@media (max-width: 980px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-container .social-media,
+  .footer-container .address-container,
+  .footer-container .product-category,
+  .footer-container .first-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  footer {
+    height: auto;
+    padding: 10px 20px;
+  }
 }
