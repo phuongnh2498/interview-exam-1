@@ -108,4 +108,32 @@ document.addEventListener("DOMContentLoaded", function () {
   menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("menu-open");
   });
+
+  //lazy loada images
+  const images = document.querySelectorAll(".lazy-image");
+
+  images.forEach((image) => {
+    image.addEventListener("load", () => {
+      image.style.opacity = 1; // Set opacity to 1 to fade in the image
+      image.style.transform = "translateX(0)";
+    });
+  });
+
+  const lazyLoadElements = document.querySelectorAll(".lazy-load");
+
+  lazyLoadElements.forEach((element) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const src = element.getAttribute("data-src");
+          element.style.backgroundImage = `url(${src})`;
+          element.style.opacity = 1; // Set opacity to 1 to fade in
+          element.style.transform = "translateX(0)";
+          observer.unobserve(element);
+        }
+      });
+    });
+
+    observer.observe(element);
+  });
 });

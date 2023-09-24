@@ -775,6 +775,14 @@ a {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
+
+.lazy-image,
+.lazy-load {
+  opacity: 0; /* Initially set opacity to 0 */
+  transform: translateX(-50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
 @media (max-width: 980px) {
   .section-one,
   .section-two,
