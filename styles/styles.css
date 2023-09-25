@@ -724,7 +724,6 @@ a {
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-  color: #000000;
   margin-left: -5px;
   font-weight: 400;
 }
@@ -741,6 +740,7 @@ a {
 .page-numbers .page-number-active {
   font-size: 45px;
   position: relative;
+  color: #000000;
   margin-bottom: 47px;
 }
 .page-numbers .page-number-active::after {
