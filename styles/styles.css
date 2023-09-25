@@ -503,8 +503,9 @@ a {
   color: #383838;
   font-weight: 700;
   position: absolute;
-  right: 89px;
-  top: 23px;
+  right: 8.5%;
+  top: 7%;
+  z-index: 3;
 }
 .cell05 .image-container {
   width: 60.1%;
